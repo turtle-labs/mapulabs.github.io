@@ -1,0 +1,581 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-gap: 40px;
+    grid-template-rows: max-content auto auto;
+}
+
+
+
+/**************** Header ***************/
+header {
+    padding: 0px;
+
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+    #navTitleBar {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        z-index: 1;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #title {
+            display: grid;
+        }
+
+            #title a {
+                float: left;
+            }
+
+            #titleLogo {
+                float: left;
+                margin: 10px;
+                padding: 5px;
+                height: 100px;
+            }
+
+        #dropdownBtn {
+            margin: 10px 20px 10px 10px;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+
+            background-image: url("../Images_Videos/Navigation/burgerNav.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    #navbar {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+        height: 100%;
+    }
+
+        #navbarList {
+            list-style: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+            .navHeaderContainer {
+            }
+
+                .navHeader {
+                    padding: 10px;
+                    height: 100%;
+                    position: relative;
+                    z-index: 1;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .navHeaderLink {
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+
+                    .navExpandArrow {
+                        padding: 5px;
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                    }
+
+                .navItemList {
+                    list-style: none;
+                    transform-origin: bottom;
+                }
+
+                    .navItemList li {
+                        padding: 0px 10px;
+                        display: grid;
+                    }
+
+                    .navItemList a {
+                        padding: 5px;
+                        margin: 0 5px;
+                        cursor: pointer;
+                    }
+
+
+
+/**************** Main ***************/
+main {
+    display: grid;
+    grid-gap: 40px;
+}
+
+    main section {
+        padding: 20px;
+    }
+
+        .sectionHeader {
+            grid-column: 1 / -1;
+            min-height: 50px;
+            border-radius: 5px;
+
+            display: grid;
+            align-items: center;
+        }
+
+            .headerLine {
+                height: 2px;
+                border-radius: 5px;
+                background-image: linear-gradient(to right, white, rgba(51, 55, 71, 1), white);
+            }
+
+            .headerText {
+            }
+
+    #videoFilter {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -98;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #videoBackground {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -99;
+        /* filter: blur(1px); */
+    }
+
+    #home {
+        padding: 20px;
+        height: calc(100vh - 120px - 2*40px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #bannerContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -40px;
+        }
+
+            #homeBannerText {
+            }
+
+            #homeBannerTypewriter {
+
+            }
+
+
+    #about {
+        min-height: calc(100vh - 120px - 2*40px);
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: auto auto;
+    }
+
+        #about .contentContainer {
+            padding: 20px;
+            grid-column: 1 / span 2;
+
+            display: grid;
+            grid-template-columns: auto auto;
+            /* grid-template-rows: auto auto; */
+            grid-gap: 10px;
+        }
+
+            #about .contentImg {
+                grid-column: 1 / span 2;
+                display: grid;
+            }
+
+                #about .contentImg img {
+                    margin: auto;
+                    max-width: 50%;
+                }
+
+            #about .contentHeader {
+                grid-column: 1 / span 2;
+
+                text-align: center;
+            }
+
+            #about .contentText {
+                grid-column: 1 / span 2;
+            }
+
+
+    #portfolio {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: auto auto;
+    }
+
+        #portfolio .contentContainer {
+            padding: 20px;
+            grid-column: 1 / span 2;
+
+            display: grid;
+            grid-gap: 10px;
+        }
+
+            #portfolio .content {
+                display: flex;
+                justify-content: center;
+            }
+
+                #portfolio .content img {
+                    max-width: 50%;
+                }
+
+                #portfolio .portfolioList {
+                    display: grid;
+                    grid-gap: 30px;
+                }
+
+                    #portfolio .portfolioProject {
+                        padding-top: 10px;
+                        border-top: 1px solid lightgrey;
+                    }
+
+    #toybox {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: auto auto;
+    }
+
+        #toyboxIntro {
+            grid-column: 1 / span 2;
+        }
+
+        #toyboxList {
+            grid-column: 1 / span 2;
+
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 300px) );
+            justify-content: center;
+        }
+
+        #toybox .contentContainer {
+            padding: 20px;
+
+            display: grid;
+            grid-gap: 20px;
+        }
+
+            #toybox .content {
+                display: grid;
+                justify-content: center;
+            }
+
+        #toybox .toyItem {
+            cursor: pointer;
+        }
+
+        .cardFront, .cardBack {
+            display: grid;
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .cardBtn {
+                padding: 7px;
+                cursor: pointer;
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            }
+
+            .cardBtn:hover {
+                box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+                -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+                -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+            }
+
+    #contact {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+        #contact .contentContainer {
+            padding: 20px;
+            grid-column: 1 / span 2;
+
+            display: grid;
+            grid-gap: 20px;
+            align-items: center;
+        }
+
+            #contact .content {
+                display: grid;
+                justify-content: center;
+            }
+
+            #contact .content img {
+                margin: auto;
+                max-width: 50%;
+            }
+
+
+        #contactInfo h3 {
+            margin-top: 20px;
+        }
+
+
+        #contactMedia #socialMediaContainer {
+            grid-column: 1 / span 2;
+
+
+            display: grid;
+            grid-gap: 50px 100px;
+            grid-template-columns: auto auto;
+        }
+
+            #socialMediaContainer .smLogoCon {
+                display: grid;
+                justify-content: center;
+            }
+
+                #socialMediaContainer .smLogo {
+                    width: 60px;
+                    height: 60px;
+                    max-width: 100% !important;
+
+                }
+
+                #contactMedia:hover .animated {
+                    display: block;
+                }
+
+                #contactMedia:hover .static {
+                    display: none;
+                }
+
+                    .smLogo.animated {
+                        display: none;
+                    }
+
+                    .smLogo.static {
+                        display: block;
+                    }
+
+
+        #contactMaps iframe {
+            border-radius: 5px;
+        }
+
+            #largeMap {
+                display: none;
+            }
+
+            #mediumMap {
+                display: none;
+            }
+
+            #smallMap {
+                display: none;
+            }
+
+            #xSmallMap {
+                display: block;
+            }
+
+
+        #contactForm form {
+            display: grid;
+            grid-gap: 10px;
+
+            grid-template-columns: auto auto;
+
+            grid-template-areas:
+            "topic topic"
+            "dog dog"
+            "name name"
+            "email email"
+            "message message"
+            "submit submit"
+        }
+
+
+            /* Highlight input fields if input is invalid */
+            #contactForm form .redIfInvalid:invalid {
+                border: 1px solid tomato;
+            }
+
+            #contactForm form > * {
+                border-radius: 5px;
+                padding: 10px;
+                border: 1px solid lightgrey;
+            }
+
+            #contactFormTopic {
+                grid-area: topic;
+            }
+
+            #contactFormDog {
+                grid-area: dog;
+            }
+
+            #contactFormName {
+                grid-area: name;
+            }
+
+            #contactFormEmail {
+                grid-area: email;
+            }
+
+            #contactFormMessage {
+                grid-area: message;
+                min-height: 200px;
+            }
+
+            #contactFormSubmit {
+                grid-area: submit;
+                cursor: pointer;
+            }
+
+            /* Grey overlay confirming when message send */
+            #contactForm #contactFormSucces {
+                z-index: 10;
+                grid-column: topic-start / dog-end;
+	            grid-row: topic-start / submit-end;
+                background-color: rgba(0,0,0,0.6);
+                transition: ease-in 1s;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                grid-gap: 20px;
+
+                display: none;
+                opacity: 0;
+            }
+
+                #contactFormSuccesLogo {
+                    transition: 2s;
+                }
+
+
+
+/**************** Footer ***************/
+footer {
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+    .footerContent {
+    }
+
+    #footerContact {
+        padding: 20px;
+        text-align: center;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+        #footerLogo {
+            height: 50px;
+            margin: auto;
+        }
+
+        #footerContact a {
+            padding: 5px;
+        }
+
+    #footerLinks {
+        padding: 20px;
+
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10px;
+    }
+
+        #footerLinks a {
+            padding: 5px;
+        }
+
+    #footerMedia {
+        padding: 20px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #footerMedia .footerSmLogoCon {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            display: grid;
+        }
+
+        #footerMedia .smLogo {
+            border-radius: 5px;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.2s;
+
+        }
+
+        .youtube {
+            background-image: url("../Images_Videos/Footer/youtube-grey.png");
+        }
+        .youtube:hover {
+            background-image: url("../Images_Videos/Footer/youtube-clr.png");
+        }
+
+        .linkedin {
+            background-image: url("../Images_Videos/Footer/linkedin-grey.png");
+        }
+        .linkedin:hover {
+            background-image: url("../Images_Videos/Footer/linkedin-clr.png");
+        }
+
+        .github {
+            background-image: url("../Images_Videos/Footer/github-grey.png");
+        }
+        .github:hover {
+            background-image: url("../Images_Videos/Footer/github-clr.png");
+        }
+
+        .twitter {
+            background-image: url("../Images_Videos/Footer/twitter-grey.png");
+        }
+        .twitter:hover {
+            background-image: url("../Images_Videos/Footer/twitter-clr.png");
+        }
