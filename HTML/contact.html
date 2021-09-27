@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <title>My Personal Website (Coursera Assignment)</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- SEO Tags -->
+    <meta name="keywords" content="Personal Website, Developer, Web Design"/>
+    <meta name="Personal Website" content="The page is a presentation of who I am, my work and experience and what I can offer."/>
+    <!-- <meta name=”robots” content=”noindex, nofollow”/> -->
+    <meta name="author" content="Steve Rogers"/>
+    <meta name="copyright" content="Steve Rogers"/>
+
+    <!-- Prevent Browsers From Caching Data -->
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0"> -->
+
+    <!-- CSS Stylesheet -->
+    <link href="../Styles/0_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="navTitleBar" role="banner">
+            <div id="title">
+                <a href="../index.html">
+                    <img id="titleLogo" src="../Images_Videos/Logo/logo.png" alt="Webpage Logo">
+                </a>
+            </div>
+
+            <div id="dropdownBtn"></div>
+        </div>
+
+        <nav id="navbar" role="navigation">
+            <ul id="navbarList">
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/about.html">About</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/about.html#aboutMe"> - About Me</a></li>
+                        <li><a href="../HTML/about.html#education"> - Education</a></li>
+                        <li><a href="../HTML/about.html#experience"> - Experience</a></li>
+                        <li><a href="../HTML/about.html#vision"> - Vision</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/portfolio.html">Portfolio</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/portfolio.html#websites"> - Websites</a></li>
+                        <li><a href="../HTML/portfolio.html#applications"> - Applications</a></li>
+                        <li><a href="../HTML/portfolio.html#consulting"> - Consulting</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/toybox.html">Toybox</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/toybox.html#toyboxIntro"> - Toys</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader pageActive">
+                        <a class="navHeaderLink" href="#contact">Contact</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="#contactInfo"> - Contact Info</a></li>
+                        <li><a href="#contactMedia"> - Social Media</a></li>
+                        <li><a href="#contactMaps"> - Location</a></li>
+                        <li><a href="#contactForm"> - Contact Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- ********** Video Wallpaper ********** -->
+        <div id="videoFilter"></div>
+        <video id="videoBackground" playsinline autoplay muted loop>
+            <source src="../Images_Videos/Wallpaper/video21080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- ********** Contact Page ********** -->
+        <section id="contact">
+            <div class="sectionHeader">
+                <h1 class="headerText">&lt; Contact &gt;</h1>
+                <div class="headerLine"></div>
+            </div>
+
+            <div id="contactInfo" class="contentContainer">
+                <div class="content">
+                    <img src="../Images_Videos/Contact-Page/info.jpg" alt="Content Image - Info">
+                </div>
+
+                <div class="content">
+                    <h2>Contact Info</h2>
+                </div>
+
+                <div class="content">
+                    <h3>MapuLabs Inc.</h3>
+                    <p>
+                        MapuLabs Inc. is an American massive open online cake provider, founded in 2021 by a Coursera computer science professors. Coursera works with universities and other organizations to offer online courses, certifications, and degrees in a variety of subjects. In 2021 it was estimated that about 150 universities offered more 4,000 courses through Coursera.
+                    </p>
+                    <br>
+                    <p>
+                        © 2021 MapuLabs Inc. All rights reserved.
+                    </p>
+
+                    <h3>Address:</h3>
+                    <p>
+                        Unicorn Avenue 369,<br>
+                        Rainbow Pond,<br>
+                        SnakeWay 20022,<br>
+                        Planet Earth
+                    </p>
+
+                    <h3>Website:</h3>
+                    <a href="https://www.coursera.org/">https://www.coursera.org/</a>
+
+                    <h3>Phone number:</h3>
+                    <a href="tel:+11231231234">+1 123-123-1234</a>
+
+                    <h3>Email:</h3>
+                    <a href="mailto:contact@mapulabs.org">contact@mapulabs.org</a>
+                </div>
+            </div>
+
+            <div id="contactMedia" class="contentContainer">
+                <div class="content">
+                    <img src="../Images_Videos/Contact-Page/social.jpg" alt="Content Image - Social Media">
+                </div>
+
+                <div class="content">
+                    <h2>Feel free to connect with me!</h2>
+                </div>
+
+                <div class="content">
+                    <div id="socialMediaContainer">
+                        <!-- <h2>Feel free to connect with me!</h2> -->
+
+                        <div class="smLogoCon">
+                            <a href="https://twitter.com" target="_blank">
+                                <img class="smLogo animated" src="../Images_Videos/Contact-Page/twitter.gif" alt="Animated Twitter Logo">
+                                <img class="smLogo static" src="../Images_Videos/Contact-Page/twitter.png" alt="Static Twitter Logo">
+                            </a>
+                        </div>
+
+                        <div class="smLogoCon">
+                            <a href="https://linkedin.com" target="_blank">
+                                <img class="smLogo animated" src="../Images_Videos/Contact-Page/linkedin.gif" alt="Animated LinkedIn Logo">
+                                <img class="smLogo static" src="../Images_Videos/Contact-Page/linkedin.png" alt="Static LinkedIn Logo">
+                            </a>
+                        </div>
+
+                        <div class="smLogoCon">
+                            <a href="https://youtube.com" target="_blank">
+                                <img class="smLogo animated" src="../Images_Videos/Contact-Page/youtube2.gif" alt="Animated YouTube Logo">
+                                <img class="smLogo static" src="../Images_Videos/Contact-Page/youtube.png" alt="Static YouTube Logo">
+                            </a>
+                        </div>
+
+                        <div class="smLogoCon">
+                            <a href="https://github.com" target="_blank">
+                                <img class="smLogo animated" src="../Images_Videos/Contact-Page/github.gif" alt="Animated Github Logo">
+                                <img class="smLogo static" src="../Images_Videos/Contact-Page/github.png" alt="Static Github Logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactMaps" class="contentContainer">
+                <!-- <div class="content">
+                    <img src="../Images_Videos/Contact-Page/maps.jpg">
+                </div> -->
+
+                <div class="content">
+                    <h2>Location Maps</h2>
+                </div>
+
+                <div class="content">
+                    <!-- Google Maps Plugins -->
+                    <iframe id="largeMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6340.25228738258!2d-122.06084399999999!3d37.386849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d6a5d3433e0d4d4!2sCoursera!5e0!3m2!1sen!2sth!4v1631186155277!5m2!1sen!2sth" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps Plugin"></iframe>
+                    <iframe id="mediumMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6340.25228738258!2d-122.06084399999999!3d37.386849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d6a5d3433e0d4d4!2sCoursera!5e0!3m2!1sen!2sth!4v1631025463205!5m2!1sen!2sth" width="580" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps Plugin"></iframe>
+                    <iframe id="smallMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.1261360875997!2d-122.06303268469344!3d37.38684917983194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb71f7d206f4d%3A0x5d6a5d3433e0d4d4!2sCoursera!5e0!3m2!1sen!2sth!4v1631021351483!5m2!1sen!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps Plugin"></iframe>
+                    <iframe id="xSmallMap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6340.25228738258!2d-122.06084399999999!3d37.386849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d6a5d3433e0d4d4!2sCoursera!5e0!3m2!1sen!2sth!4v1631185641724!5m2!1sen!2sth" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps Plugin"></iframe>
+                </div>
+            </div>
+
+            <div id="contactForm" class="contentContainer">
+                <div class="content">
+                    <img src="../Images_Videos/Contact-Page/contact.jpg" alt="Content Image - Mail">
+                </div>
+
+                <div class="content">
+                    <h2>Contact Form</h2>
+                </div>
+
+                <div class="content">
+                    <p>If you have any questions, feedback or just found my profile interesting, feel free to contact me below!</p>
+                </div>
+
+                <div class="">
+                    <form onsubmit="return false">
+                        <input id="contactFormTopic" class="formField" type="text" name="topic" placeholder="Topic" pattern="[A-Za-z0-9]+"  title="Only letters and numbers. No more than 50 characters." required/>
+                        <input id="contactFormDog" class="formField" type="text" name="dog" placeholder="Are Chihuahuas even a dog? (Yes or No)" pattern="$|no|No|NO" title="Wrong answer!" required/>
+                        <input id="contactFormName" class="formField" type="text" name="name" placeholder="Name" pattern="[A-Za-z0-9]+" title="Only letters and numbers. No more than 50 characters." required/>
+                        <input id="contactFormEmail" class="formField" type="text" name="email" placeholder="Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email format." required/>
+
+                        <textarea id="contactFormMessage" class="formField" name="message" placeholder="Message" required></textarea>
+
+                        <input type="submit" id="contactFormSubmit" value="Send!"/>
+
+                        <div id="contactFormSucces">
+                            <p>Message successfully send!</p>
+                            <img id="contactFormSuccesLogo" src="../Images_Videos/Contact-Page/checked3.png" alt="success-logo">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <div id="footerContact" class="footerContent">
+            <a href="../index.html">
+                <img id="footerLogo" src="../Images_Videos/Logo/logo.png" alt="Company Logo">
+            </a>
+            <p>© 2021 MapuLabs Inc. All rights reserved.</p>
+            <a href="mailto:contact@mapulabs.org">contact@mapulabs.org</a>
+        </div>
+
+        <div id="footerLinks" class="footerContent">
+            <a href="#">Back to top!</a>
+            <a href="../HTML/about.html">About</a>
+            <a href="../HTML/portfolio.html">Portfolio</a>
+            <a href="../HTML/toybox.html">Toybox</a>
+            <a href="../HTML/contact.html">Contact</a>
+        </div>
+
+        <div id="footerMedia" class="footerContent">
+            <div class="footerSmLogoCon">
+                <a class="smLogo youtube" href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo linkedin" href="https://www.linkedin.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo github" href="https://github.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo twitter" href="https://twitter.com/" target="_blank"></a>
+            </div>
+        </div>
+
+        <!-- Main Scripts -->
+        <script defer type="text/javascript" src="../Scripts/scripts.js"></script>
+
+        <!-- Page Specific Scripts -->
+        <script defer type="text/javascript" src="../Scripts/contactPage.js"></script>
+    </footer>
+</body>
+
+</html>

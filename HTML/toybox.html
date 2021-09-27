@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <title>My Personal Website (Coursera Assignment)</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- SEO Tags -->
+    <meta name="keywords" content="Personal Website, Developer, Web Design"/>
+    <meta name="Personal Website" content="The page is a presentation of who I am, my work and experience and what I can offer."/>
+    <!-- <meta name=”robots” content=”noindex, nofollow”/> -->
+    <meta name="author" content="Steve Rogers"/>
+    <meta name="copyright" content="Steve Rogers"/>
+
+    <!-- Prevent Browsers From Caching Data -->
+    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0"> -->
+
+    <!-- CSS Stylesheet -->
+    <link href="../Styles/0_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="navTitleBar" role="banner">
+            <div id="title">
+                <a href="../index.html">
+                    <img id="titleLogo" src="../Images_Videos/Logo/logo.png" alt="Webpage Logo">
+                </a>
+            </div>
+
+            <div id="dropdownBtn"></div>
+        </div>
+
+        <nav id="navbar" role="navigation">
+            <ul id="navbarList">
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/about.html">About</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/about.html#aboutMe"> - About Me</a></li>
+                        <li><a href="../HTML/about.html#education"> - Education</a></li>
+                        <li><a href="../HTML/about.html#experience"> - Experience</a></li>
+                        <li><a href="../HTML/about.html#vision"> - Vision</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/portfolio.html">Portfolio</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/portfolio.html#websites"> - Websites</a></li>
+                        <li><a href="../HTML/portfolio.html#applications"> - Applications</a></li>
+                        <li><a href="../HTML/portfolio.html#consulting"> - Consulting</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader pageActive">
+                        <a class="navHeaderLink" href="#toybox">Toybox</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="#toyboxIntro"> - Toys</a></li>
+                    </ul>
+                </li>
+
+                <li class="navHeaderContainer">
+                    <div class="navHeader">
+                        <a class="navHeaderLink" href="../HTML/contact.html">Contact</a>
+                        <img class="navExpandArrow" src="../Images_Videos/Navigation/arrow-down.svg" alt="nav-arrow-logo">
+                    </div>
+
+                    <ul class="navItemList">
+                        <li><a href="../HTML/contact.html#contactInfo"> - Contact Info</a></li>
+                        <li><a href="../HTML/contact.html#contactMedia"> - Social Media</a></li>
+                        <li><a href="../HTML/contact.html#contactMaps"> - Location</a></li>
+                        <li><a href="../HTML/contact.html#contactForm"> - Contact Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <!-- ********** Video Wallpaper ********** -->
+        <div id="videoFilter"></div>
+        <video id="videoBackground" playsinline autoplay muted loop>
+            <source src="../Images_Videos/Wallpaper/video21080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+
+        <!-- ********** Toybox Page ********** -->
+        <section id="toybox">
+            <div class="sectionHeader">
+                <h1 class="headerText">&lt; Toybox &gt;</h1>
+                <div class="headerLine"></div>
+            </div>
+
+            <div id="toyboxIntro" class="contentContainer">
+                <div class="content">
+                    <h2>Toy's I've build!</h2>
+                </div>
+
+                <div class="content">
+                    <p>This page is mostly for fun. It doesn't serve a real purpose. Often when people build cool stuff, they upload it to Github. This page is meant to be sort of the same - like a small showroom "slash" playground, where visitors can see random things that I've build. Visitors should be able to try the applications and view the code. As of now, I haven't really build anything, so the buttons on the backside of the cards, doesn't link anywhere (yet).</p>
+                </div>
+            </div>
+
+            <div id="toyboxList">
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/alarm.png" alt="clock-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Alarm Clock</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/binary.png" alt="binary-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Binary Converter</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/calculator.png" alt="calculator-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Calculator</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/calendar.png" alt="calendar-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Calendar</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/currency.png" alt="currency-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Currency Converter</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/game.png" alt="game-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Tetris Game</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/music.png" alt="music-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Music Player</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/photo.png" alt="photo-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Photo Editor</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="toyItemCard">
+                    <div class="contentContainer toyItem">
+
+                        <div class="cardFront">
+                            <div class="content">
+                                <img src="../Images_Videos/Toybox-Page/quiz.png" alt="quiz-symbol">
+                            </div>
+
+                            <div class="content">
+                                <h2>Quiz App</h2>
+                            </div>
+
+                            <div class="content">
+                                <p>This is just placeholder text. The website is an assignment in webdesign, hence why I've chosen not to spend too much time writing all the text. I have chosen not to insert any private information about my self either.</p>
+                            </div>
+                        </div>
+
+                        <div class="cardBack">
+                            <input type="button" class="cardBtn previewApp" value="Preview App"/>
+                            <input type="button" class="cardBtn previewCode" value="Preview Code"/>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div id="footerContact" class="footerContent">
+            <a href="../index.html">
+                <img id="footerLogo" src="../Images_Videos/Logo/logo.png" alt="Company Logo">
+            </a>
+            <p>© 2021 MapuLabs Inc. All rights reserved.</p>
+            <a href="mailto:contact@mapulabs.org">contact@mapulabs.org</a>
+        </div>
+
+        <div id="footerLinks" class="footerContent">
+            <a href="#">Back to top!</a>
+            <a href="../HTML/about.html">About</a>
+            <a href="../HTML/portfolio.html">Portfolio</a>
+            <a href="../HTML/toybox.html">Toybox</a>
+            <a href="../HTML/contact.html">Contact</a>
+        </div>
+
+        <div id="footerMedia" class="footerContent">
+            <div class="footerSmLogoCon">
+                <a class="smLogo youtube" href="https://www.youtube.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo linkedin" href="https://www.linkedin.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo github" href="https://github.com/" target="_blank"></a>
+            </div>
+
+            <div class="footerSmLogoCon">
+                <a class="smLogo twitter" href="https://twitter.com/" target="_blank"></a>
+            </div>
+        </div>
+
+        <!-- Main Scripts -->
+        <script defer type="text/javascript" src="../Scripts/scripts.js"></script>
+
+        <!-- Page Specific Scripts -->
+        <script defer type="text/javascript" src="../Scripts/toyboxPage.js"></script>
+    </footer>
+</body>
+
+</html>
