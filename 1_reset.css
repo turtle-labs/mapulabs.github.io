@@ -1,0 +1,31 @@
+/********** CSS Reset **********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/********** Scrollbar styling **********/
+/* Works on Firefox */
+* {
+  /* scrollbar-width: thin; */
+  scrollbar-width: 0;
+  scrollbar-color: darkgrey white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  /* width: 5px; */
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border: none;
+}
