@@ -210,7 +210,8 @@ main {
 
                 #about .contentImg img {
                     margin: auto;
-                    max-width: 50%;
+                    width: 40%;
+                    max-width: 250px;
                 }
 
             #about .contentHeader {
@@ -244,7 +245,8 @@ main {
             }
 
                 #portfolio .content img {
-                    max-width: 50%;
+                    width: 40%;
+                    max-width: 250px;
                 }
 
                 #portfolio .portfolioList {
@@ -290,6 +292,12 @@ main {
 
         #toybox .toyItem {
             cursor: pointer;
+        }
+
+        #toybox .cardFront img {
+            border-radius: 5px;
+            width: 150px;
+            height: 150px;
         }
 
         .cardFront, .cardBack {
@@ -338,9 +346,8 @@ main {
 
             #contact .content img {
                 margin: auto;
-                max-width: 50%;
+                max-width: 40%;
             }
-
 
         #contactInfo h3 {
             margin-top: 20px;
