@@ -2,7 +2,7 @@ This website is made for educational purposes only. It's an assignment for a web
 
 Everything is coded from scratch. The page and its functions has been tested multiple times before the final upload.
 
-HTML pages are validated at "https://validator.w3.org/" with no errors. There's only a handful of non-essential warnings.
+HTML pages are validated at "https://validator.w3.org/" with no errors. There's only a handful of non-essential / "intentional" warnings.
 
 All pages are coded for mobile-first-viewport, but optimized for high-definition (HD) as well.
 
