@@ -1,6 +1,6 @@
 This website is made for educational purposes only. It's an assignment for a web development online course on coursera.com.
 
-Everything is coded from scratch. The page has been tested multiple times before the final upload.
+Everything is coded from scratch. The page and its functions has been tested multiple times before the final upload.
 
 HTML pages are validated at "https://validator.w3.org/" with no errors. There's only a handful of non-important warnings.
 
