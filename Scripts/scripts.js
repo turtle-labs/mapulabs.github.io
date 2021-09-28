@@ -9,6 +9,20 @@ const EL = (selectElement) => document.querySelector(selectElement);
 
 
 // ---------------------------------------------------------------------- //
+// ------------------ Checks if device has touchscreen ------------------ //
+// ---------------------------------------------------------------------- //
+
+let touchscreen = false;
+
+if(window.matchMedia("(pointer: coarse)").matches) {
+    touchscreen = true;
+}
+
+
+
+
+
+// ---------------------------------------------------------------------- //
 // ------------------- Main Page > Dropdown Navigation ------------------ //
 // ---------------------------------------------------------------------- //
 
@@ -87,42 +101,37 @@ deactivateItemDropdown = (expandArrow, itemList) => {
 // ----- Event -> TRIGGER main dropdown menu on CLICK ----- //
 EL('#dropdownBtn').onclick = () => {
 
-    //EL('#dropdownBtn').classList.toggle('active');
-    
-    if (!EL('#dropdownBtn').classList.contains('active') ) {
-        EL('#dropdownBtn').classList.add('active');
-    } else {
-        EL('#dropdownBtn').classList.remove('active');
-    }
+    EL('#dropdownBtn').classList.toggle('active');
 
-    if ( EL('#dropdownBtn').classList.contains('active') ) {
+    if (EL('#dropdownBtn').classList.contains('active') ) {
         activateDropdown();
     } else {
         deactivateDropdown();
     }
 }
 
-//window.ontouchstart = alert('touchscreen detected');
-
-if(window.matchMedia("(pointer: coarse)").matches) {
-    alert('touchscreen detected');
-}
-
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
-    // EL('#dropdownBtn').onmouseenter = () => {
-    //     if (!EL('#dropdownBtn').classList.contains('active') ) {
-    //         EL('#dropdownBtn').click();
-    //     }
-    // }
+// Only triggers if device does not have touchscreen
+
+EL('#dropdownBtn').onmouseenter = () => {
+
+    if (!touchscreen) {
+
+        if (!EL('#dropdownBtn').classList.contains('active') ) {
+            EL('#dropdownBtn').click();
+        }
+
+    }
+
+}
 
     // EL('header').children.onmouseout = () => {
     //     if (EL('#dropdownBtn').classList.contains('active') ) {
     //         EL('#dropdownBtn').click();
     //     }
     // }
-
 
 
     // navHeaderContainers[i].onmouseout = () => {
