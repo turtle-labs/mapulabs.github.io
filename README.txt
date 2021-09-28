@@ -1,4 +1,4 @@
-This website is made for educational purposes only. It's an assignment for a web development online course on coursera.com.
+This website is made for educational purposes only. It's an assignment for a web development course on coursera.com.
 
 Everything is coded from scratch. The page and its functions has been tested multiple times before the final upload.
 
