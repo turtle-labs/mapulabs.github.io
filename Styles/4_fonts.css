@@ -93,6 +93,12 @@ main a {
     text-align: center;
 }
 
+#contact #contactFormSucces {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0px 10px rgba(196,181,157,0.9);
+}
+
 
 /*************** Footer ***************/
 #footerContact a {
