@@ -93,9 +93,16 @@ main a {
     text-align: center;
 }
 
-#contact #contactFormSucces {
-    font-size: 25px;
+#contact input, #contact textarea {
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+#contact #contactFormSucces p {
+    font-size: 15px;
     font-weight: bold;
+    color: rgba(255, 255, 255, 1);
     text-shadow: 0 0px 10px rgba(196,181,157,0.9);
 }
 
