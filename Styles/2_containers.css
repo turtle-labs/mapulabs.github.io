@@ -471,7 +471,7 @@ main {
                 z-index: 10;
                 grid-column: topic-start / dog-end;
 	            grid-row: topic-start / submit-end;
-                background-color: rgba(0,0,0,0.6);
+                background-color: rgba(0,0,0,0.7);
                 transition: ease-in 1s;
 
                 display: flex;
