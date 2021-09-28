@@ -16,8 +16,6 @@
 
 
 
-
-
 /*************** Toyxbox Page -> Card Flip Animation ***************/
 
     #toybox #toyboxList .toyItemCard {
@@ -26,11 +24,6 @@
     }
 
     .toyItemCard:hover .toyItem {
-        transform: rotateY(180deg);
-    }
-
-    /* Onclick Card flip for touchscreens -> See JavaScript Code */
-    .cardFlipped {
         transform: rotateY(180deg);
     }
 
@@ -54,6 +47,11 @@
                 height: 100%;
                 -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-                background-image: linear-gradient(to bottom right, rgba(237, 241, 151, 0.5), rgba(2, 163, 248, 0.5));
+                background-image: linear-gradient(to bottom right, white, lightgrey);
                 transform: rotateY(180deg);
             }
+
+    /* Onclick Card flip for touchscreens -> See JavaScript Code */
+    .cardFlipped {
+        transform: rotateY(180deg);
+    }
