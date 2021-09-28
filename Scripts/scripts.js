@@ -102,7 +102,12 @@ EL('#dropdownBtn').onclick = () => {
     }
 }
 
-window.ontouchstart = alert('touchscreen detected');
+//window.ontouchstart = alert('touchscreen detected');
+
+if(window.matchMedia("(pointer: coarse)").matches) {
+    alert('touchscreen detected');
+}
+
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
