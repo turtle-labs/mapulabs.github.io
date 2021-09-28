@@ -10,6 +10,6 @@ Images and icons displayed on the website, comes with a payed standard license t
 
 The video background comes with a free license from Pixabay.com.
 
-At some point in time I will convert the JavaScript code to Classes instead.
+At some point in time I will convert the JavaScript code to Classes instead, but it's not a part of the assignment.
 
 Best regards // Enjoy your day in the Matrix.
