@@ -102,6 +102,7 @@ EL('#dropdownBtn').onclick = () => {
     }
 }
 
+window.ontouchstart = alert('touchscreen detected');
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
