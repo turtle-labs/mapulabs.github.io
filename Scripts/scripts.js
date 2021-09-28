@@ -87,7 +87,13 @@ deactivateItemDropdown = (expandArrow, itemList) => {
 // ----- Event -> TRIGGER main dropdown menu on CLICK ----- //
 EL('#dropdownBtn').onclick = () => {
 
-    EL('#dropdownBtn').classList.toggle('active');
+    //EL('#dropdownBtn').classList.toggle('active');
+    
+    if (!EL('#dropdownBtn').classList.contains('active') ) {
+        EL('#dropdownBtn').classList.add('active');
+    } else {
+        EL('#dropdownBtn').classList.remove('active');
+    }
 
     if ( EL('#dropdownBtn').classList.contains('active') ) {
         activateDropdown();
