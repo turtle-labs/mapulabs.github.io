@@ -105,11 +105,11 @@ EL('#dropdownBtn').onclick = () => {
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
-    EL('#dropdownBtn').onmouseenter = () => {
-        if (!EL('#dropdownBtn').classList.contains('active') ) {
-            EL('#dropdownBtn').click();
-        }
-    }
+    // EL('#dropdownBtn').onmouseenter = () => {
+    //     if (!EL('#dropdownBtn').classList.contains('active') ) {
+    //         EL('#dropdownBtn').click();
+    //     }
+    // }
 
     // EL('header').children.onmouseout = () => {
     //     if (EL('#dropdownBtn').classList.contains('active') ) {
