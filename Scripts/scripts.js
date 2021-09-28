@@ -26,7 +26,6 @@ if(window.matchMedia("(pointer: coarse)").matches) {
 // ------------------- Main Page > Dropdown Navigation ------------------ //
 // ---------------------------------------------------------------------- //
 
-
 // If javascript are disabled or not being loaded, the whole navigation-menu will just be visible all the time.
 
 
@@ -113,7 +112,7 @@ EL('#dropdownBtn').onclick = () => {
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
-// Only triggers if device does not have touchscreen
+// Only triggers if device is not a touchscreen
 
 EL('#dropdownBtn').onmouseenter = () => {
 
@@ -122,24 +121,8 @@ EL('#dropdownBtn').onmouseenter = () => {
         if (!EL('#dropdownBtn').classList.contains('active') ) {
             EL('#dropdownBtn').click();
         }
-
     }
-
 }
-
-    // EL('header').children.onmouseout = () => {
-    //     if (EL('#dropdownBtn').classList.contains('active') ) {
-    //         EL('#dropdownBtn').click();
-    //     }
-    // }
-
-
-    // navHeaderContainers[i].onmouseout = () => {
-    //     if (navExpandArrows[i].classList.contains('active')) {
-    //         navExpandArrows[i].click();
-    //     }
-    // }
-
 
 
 // ----- Event -> TRIGGER item dropdown menu on CLICK ----- //
