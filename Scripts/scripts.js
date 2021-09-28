@@ -99,8 +99,7 @@ EL('#dropdownBtn').onclick = () => {
 
 // ----- Event -> TRIGGER main dropdown menu on HOVER ----- //
 
-
-    EL('#dropdownBtn').onmouseover = () => {
+    EL('#dropdownBtn').onmouseenter = () => {
         if (!EL('#dropdownBtn').classList.contains('active') ) {
             EL('#dropdownBtn').click();
         }
