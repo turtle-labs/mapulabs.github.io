@@ -2,7 +2,12 @@ This website is made for educational purposes only. It's an assignment for a web
 
 Everything is coded from scratch. The page and its functions has been tested multiple times before the final upload.
 
-HTML pages are validated at "https://validator.w3.org/" with no errors. There's only a handful of non-essential / "intentional" warnings.
+HTML pages are validated at "https://validator.w3.org/" with no errors. There's only a handful of non-essential warnings. Feel free to check below:
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fturtle-labs.github.io%2Fmapulabs.github.io%2Findex.html
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fturtle-labs.github.io%2Fmapulabs.github.io%2FHTML%2Fabout.html
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fturtle-labs.github.io%2Fmapulabs.github.io%2FHTML%2Fportfolio.html
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fturtle-labs.github.io%2Fmapulabs.github.io%2FHTML%2Ftoybox.html
+ - https://validator.w3.org/nu/?doc=https%3A%2F%2Fturtle-labs.github.io%2Fmapulabs.github.io%2FHTML%2Fcontact.html
 
 All pages are coded for mobile-first-viewport, but optimized for high-definition (HD) as well.
 
